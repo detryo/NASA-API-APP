@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qoj-hW-d1u">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NASA_API_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAc-JJ-DAi">
+                                <rect key="frame" x="0.0" y="581" width="414" height="315"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syW-V2-bCm">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="315"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="PICTURE OF THE DAY" backgroundImage="Solar Montage"/>
+                                        <connections>
+                                            <segue destination="ZkD-K1-Gfr" kind="show" id="75C-T9-xGP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQZ-mQ-aeu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcE-8C-leo">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="MARS ROVER" backgroundImage="Mars Rover"/>
+                                        <connections>
+                                            <segue destination="xgW-7W-XVY" kind="show" id="vLF-zW-cL5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGu-cE-Lfc">
+                                <rect key="frame" x="0.0" y="302" width="414" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Bu-BO-nK5">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="271"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="EARTH IMAGES" backgroundImage="Earth">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="F1S-w6-Yz5" kind="show" id="5Z0-sx-7wQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BD8-t6-Mxg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046.376811594203" y="125.89285714285714"/>
+        </scene>
+        <!--Rover Images-->
+        <scene sceneID="Tuy-6X-6Qq">
+            <objects>
+                <viewController id="2wR-T8-FnS" customClass="PhotoInfoViewController" customModule="NASA_API_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K82-nY-Pzy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CF4-pI-Q2W">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epx-43-qjy">
+                                <rect key="frame" x="311" y="768" width="83" height="60"/>
+                                <state key="normal" title="Email Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="EmailImageClicked:" destination="2wR-T8-FnS" eventType="touchUpInside" id="0BF-gm-Z3N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHQ-uf-KDZ">
+                                <rect key="frame" x="20" y="768" width="61" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="YEq-lF-cgP"/>
+                                </constraints>
+                                <state key="normal" title="Add Text">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Message Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xyq-bf-LOp">
+                                <rect key="frame" x="63" y="715" width="288" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="addTextClicked:" destination="2wR-T8-FnS" eventType="editingDidEnd" id="n9d-nG-a41"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dHQ-uf-KDZ" firstAttribute="top" secondItem="epx-43-qjy" secondAttribute="top" id="2ju-0p-NNI"/>
+                            <constraint firstItem="CF4-pI-Q2W" firstAttribute="leading" secondItem="2BA-Lx-d1e" secondAttribute="leading" id="CWV-JD-Vvt"/>
+                            <constraint firstItem="dHQ-uf-KDZ" firstAttribute="baseline" secondItem="epx-43-qjy" secondAttribute="firstBaseline" id="Ea5-2C-hU3"/>
+                            <constraint firstItem="dHQ-uf-KDZ" firstAttribute="leading" secondItem="K82-nY-Pzy" secondAttribute="leadingMargin" id="Quw-VO-y8I"/>
+                            <constraint firstItem="2BA-Lx-d1e" firstAttribute="bottom" secondItem="dHQ-uf-KDZ" secondAttribute="bottom" constant="34" id="V57-oa-0No"/>
+                            <constraint firstItem="CF4-pI-Q2W" firstAttribute="centerX" secondItem="Xyq-bf-LOp" secondAttribute="centerX" id="Vu4-rq-GRp"/>
+                            <constraint firstItem="epx-43-qjy" firstAttribute="trailing" secondItem="K82-nY-Pzy" secondAttribute="trailingMargin" id="W2L-i8-0G8"/>
+                            <constraint firstAttribute="bottom" secondItem="Xyq-bf-LOp" secondAttribute="bottom" constant="137" id="aQt-Jk-z17"/>
+                            <constraint firstItem="epx-43-qjy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dHQ-uf-KDZ" secondAttribute="trailing" constant="8" symbolic="YES" id="cTQ-t9-FRq"/>
+                            <constraint firstItem="Xyq-bf-LOp" firstAttribute="centerX" secondItem="K82-nY-Pzy" secondAttribute="centerX" id="dRe-yl-46h"/>
+                            <constraint firstItem="CF4-pI-Q2W" firstAttribute="top" secondItem="2BA-Lx-d1e" secondAttribute="top" id="k2t-Dn-JVi"/>
+                            <constraint firstItem="CF4-pI-Q2W" firstAttribute="bottom" secondItem="2BA-Lx-d1e" secondAttribute="bottom" id="orB-6E-6ph"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2BA-Lx-d1e"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rover Images" id="8ez-61-Svj"/>
+                    <connections>
+                        <outlet property="addTextField" destination="Xyq-bf-LOp" id="FrL-wL-kGi"/>
+                        <outlet property="imageView" destination="CF4-pI-Q2W" id="L3b-sn-uFD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TwW-H6-QnO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2871" y="-751"/>
+        </scene>
+        <!--Photos View Controller-->
+        <scene sceneID="yvY-46-cO9">
+            <objects>
+                <viewController id="xgW-7W-XVY" customClass="PhotosViewController" customModule="NASA_API_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fW9-r9-XNS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BMO-7v-kg4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="j9z-KS-Pur">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="P57-AI-26W" customClass="PhotoCollectionViewCell" customModule="NASA_API_APP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Sd7-05-acX">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xT4-0D-Zda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                </imageView>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="nSu-9l-1VF">
+                                                    <rect key="frame" x="8" y="15" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="xT4-0D-Zda" secondAttribute="trailing" id="ECX-P6-NPc"/>
+                                                <constraint firstItem="xT4-0D-Zda" firstAttribute="leading" secondItem="Sd7-05-acX" secondAttribute="leading" id="Ql2-On-wlD"/>
+                                                <constraint firstItem="xT4-0D-Zda" firstAttribute="top" secondItem="Sd7-05-acX" secondAttribute="top" id="jeg-AH-khw"/>
+                                                <constraint firstAttribute="bottom" secondItem="xT4-0D-Zda" secondAttribute="bottom" id="yOr-OO-BPB"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="xT4-0D-Zda" id="Iao-AA-Kif"/>
+                                            <outlet property="spinner" destination="nSu-9l-1VF" id="8ek-Ch-0JR"/>
+                                            <segue destination="2wR-T8-FnS" kind="show" identifier="ShowPhoto" id="cVl-6k-Pvc"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YtY-QL-iBo" firstAttribute="bottom" secondItem="BMO-7v-kg4" secondAttribute="bottom" id="5Rb-A0-PNz"/>
+                            <constraint firstItem="BMO-7v-kg4" firstAttribute="leading" secondItem="YtY-QL-iBo" secondAttribute="leading" id="DPI-tP-taG"/>
+                            <constraint firstItem="BMO-7v-kg4" firstAttribute="top" secondItem="YtY-QL-iBo" secondAttribute="top" id="Hkz-jt-jzR"/>
+                            <constraint firstItem="YtY-QL-iBo" firstAttribute="trailing" secondItem="BMO-7v-kg4" secondAttribute="trailing" id="rKR-pI-5uD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YtY-QL-iBo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PD8-6p-KqP">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="t3R-7f-5P7">
+                            <rect key="frame" x="65" y="6" width="284" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Curiosity"/>
+                                <segment title="Opportunity"/>
+                                <segment title="Spirit "/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentedButtonClicked:" destination="xgW-7W-XVY" eventType="valueChanged" id="ulC-Gb-fS6"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="BMO-7v-kg4" id="dMI-U8-hIU"/>
+                        <outlet property="segmentedButton" destination="t3R-7f-5P7" id="89X-ub-Lez"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2oZ-0o-sWy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="-751"/>
+        </scene>
+        <!--Earth Images-->
+        <scene sceneID="JwW-Js-BEo">
+            <objects>
+                <viewController id="F1S-w6-Yz5" customClass="EyeInTheSkyViewController" customModule="NASA_API_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XXm-p9-9f4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZi-Pj-kCV" userLabel="containerView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="475"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="kQi-w7-Wta" kind="embed" id="sbw-13-zg7"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjM-DZ-NJH">
+                                <rect key="frame" x="0.0" y="814" width="414" height="30"/>
+                                <state key="normal" title="Get Photo"/>
+                                <connections>
+                                    <action selector="getImage:" destination="F1S-w6-Yz5" eventType="touchUpInside" id="bSV-wI-5so"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v1n-FE-q1K">
+                                <rect key="frame" x="0.0" y="563" width="414" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="vjK-VY-Ekg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZZi-Pj-kCV" firstAttribute="top" secondItem="qNb-ho-BgY" secondAttribute="top" id="5oq-Yn-4OB"/>
+                            <constraint firstItem="qNb-ho-BgY" firstAttribute="bottom" secondItem="CjM-DZ-NJH" secondAttribute="bottom" constant="18" id="Jhr-Sx-m8v"/>
+                            <constraint firstItem="v1n-FE-q1K" firstAttribute="top" secondItem="ZZi-Pj-kCV" secondAttribute="bottom" id="Jn8-kH-0NF"/>
+                            <constraint firstItem="CjM-DZ-NJH" firstAttribute="leading" secondItem="v1n-FE-q1K" secondAttribute="leading" id="SIB-Xf-cYK"/>
+                            <constraint firstItem="CjM-DZ-NJH" firstAttribute="top" secondItem="v1n-FE-q1K" secondAttribute="bottom" constant="8" id="a9u-5k-PIi"/>
+                            <constraint firstItem="v1n-FE-q1K" firstAttribute="trailing" secondItem="qNb-ho-BgY" secondAttribute="trailing" id="eRL-FH-Nwt"/>
+                            <constraint firstItem="ZZi-Pj-kCV" firstAttribute="leading" secondItem="qNb-ho-BgY" secondAttribute="leading" id="guH-dc-RTn"/>
+                            <constraint firstItem="v1n-FE-q1K" firstAttribute="leading" secondItem="qNb-ho-BgY" secondAttribute="leading" id="i6H-zM-VQF"/>
+                            <constraint firstItem="ZZi-Pj-kCV" firstAttribute="trailing" secondItem="qNb-ho-BgY" secondAttribute="trailing" id="jxq-OM-B4x"/>
+                            <constraint firstItem="CjM-DZ-NJH" firstAttribute="trailing" secondItem="v1n-FE-q1K" secondAttribute="trailing" id="rVx-9g-zs9"/>
+                            <constraint firstItem="v1n-FE-q1K" firstAttribute="top" secondItem="ZZi-Pj-kCV" secondAttribute="bottom" id="u75-FJ-U9h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qNb-ho-BgY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Earth Images" id="TQB-QA-3bD"/>
+                    <connections>
+                        <outlet property="imageView" destination="v1n-FE-q1K" id="KTK-gh-XJk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pbY-oE-jQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="127"/>
+        </scene>
+        <!--Picture of the Day-->
+        <scene sceneID="9r1-F3-rCK">
+            <objects>
+                <viewController id="ZkD-K1-Gfr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lmu-Kd-ijf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMJ-hg-SGU">
+                                <rect key="frame" x="4" y="200" width="390" height="209"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZMJ-hg-SGU" firstAttribute="trailing" secondItem="Lmu-Kd-ijf" secondAttribute="trailingMargin" id="4cm-eX-hBk"/>
+                            <constraint firstItem="ZMJ-hg-SGU" firstAttribute="top" secondItem="6m6-cZ-oiH" secondAttribute="top" constant="112" id="MjD-TH-RYC"/>
+                            <constraint firstItem="ZMJ-hg-SGU" firstAttribute="leading" secondItem="6m6-cZ-oiH" secondAttribute="leading" constant="4" id="l6K-GA-Q8L"/>
+                            <constraint firstItem="6m6-cZ-oiH" firstAttribute="bottom" secondItem="ZMJ-hg-SGU" secondAttribute="bottom" constant="453" id="oqp-9Z-Vlg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6m6-cZ-oiH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Picture of the Day" id="6p6-7w-0Ob"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnX-Jg-sUa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1073" y="966"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p8s-AB-VeQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qoj-hW-d1u" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ajt-RE-aD6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sx5-6w-f4g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KRP-Bq-aph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+        <!--Location Search Table-->
+        <scene sceneID="6at-2E-3fV">
+            <objects>
+                <tableViewController storyboardIdentifier="LocationSearchTable" id="OG0-xz-CNe" customClass="LocationSearchTable" customModule="NASA_API_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7Y8-xJ-DYP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="Sx6-hW-bHg" detailTextLabel="XAm-8I-jCm" style="IBUITableViewCellStyleSubtitle" id="fDl-sY-wy7">
+                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fDl-sY-wy7" id="DyC-Mn-SwO">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Sx6-hW-bHg">
+                                            <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XAm-8I-jCm">
+                                            <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="OG0-xz-CNe" id="PZV-5C-N3p"/>
+                            <outlet property="delegate" destination="OG0-xz-CNe" id="pUC-Pr-BF4"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rpp-5Y-fuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2870" y="808"/>
+        </scene>
+        <!--MapViewController-->
+        <scene sceneID="SN6-Ab-OHX">
+            <objects>
+                <viewController id="zhd-s1-ipX" userLabel="MapViewController" customClass="MapViewController" customModule="NASA_API_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1rL-FE-HhQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="475"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GsH-fb-CGe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="475"/>
+                            </mapView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="GsH-fb-CGe" firstAttribute="top" secondItem="1rL-FE-HhQ" secondAttribute="top" id="Fny-xn-VHm"/>
+                            <constraint firstAttribute="bottom" secondItem="GsH-fb-CGe" secondAttribute="bottom" id="GbR-ZK-rFx"/>
+                            <constraint firstAttribute="trailing" secondItem="GsH-fb-CGe" secondAttribute="trailing" id="MaE-51-3L1"/>
+                            <constraint firstItem="GsH-fb-CGe" firstAttribute="top" secondItem="1rL-FE-HhQ" secondAttribute="top" id="ONy-eW-k8A"/>
+                            <constraint firstItem="GsH-fb-CGe" firstAttribute="bottom" secondItem="JGD-Md-Jyg" secondAttribute="bottom" id="dID-L8-VvP"/>
+                            <constraint firstItem="GsH-fb-CGe" firstAttribute="leading" secondItem="JGD-Md-Jyg" secondAttribute="leading" id="hzq-26-KWJ"/>
+                            <constraint firstItem="GsH-fb-CGe" firstAttribute="leading" secondItem="1rL-FE-HhQ" secondAttribute="leading" id="mrR-EC-dIo"/>
+                            <constraint firstItem="GsH-fb-CGe" firstAttribute="trailing" secondItem="JGD-Md-Jyg" secondAttribute="trailing" id="tlu-mi-WsF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JGD-Md-Jyg"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="MkH-kx-Mlf"/>
+                    <connections>
+                        <outlet property="mapView" destination="GsH-fb-CGe" id="Vmm-g1-IIk"/>
+                        <outlet property="view" destination="1rL-FE-HhQ" id="UPu-37-wn3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nld-JJ-BrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3714" y="127"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="g3m-q5-9dM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kQi-w7-Wta" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WiT-Vg-rkC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zhd-s1-ipX" kind="relationship" relationship="rootViewController" id="JKo-N0-4gJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNO-Tg-2RU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2871" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Earth" width="4928" height="3280"/>
+        <image name="Mars Rover" width="3000" height="2400"/>
+        <image name="Solar Montage" width="3907" height="3071"/>
+    </resources>
+</document>

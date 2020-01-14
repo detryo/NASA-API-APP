@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		952E086D238A226F00315247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E086C238A226F00315247 /* AppDelegate.swift */; };
+		952E086F238A226F00315247 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E086E238A226F00315247 /* SceneDelegate.swift */; };
+		952E0874238A226F00315247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952E0872238A226F00315247 /* Main.storyboard */; };
+		952E0876238A227100315247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952E0875238A227100315247 /* Assets.xcassets */; };
+		952E0879238A227100315247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952E0877238A227100315247 /* LaunchScreen.storyboard */; };
+		955BC538238E1D6C009795C2 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955BC537238E1D6C009795C2 /* DataModels.swift */; };
+		9562001A239410CD00319FFB /* EyeInTheSkyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95620019239410CD00319FFB /* EyeInTheSkyAPI.swift */; };
+		9562001C2394118900319FFB /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562001B2394118900319FFB /* Types.swift */; };
+		9562001F239414F200319FFB /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562001E239414F200319FFB /* ImageService.swift */; };
+		95622E052390B29C00B79B29 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95622E042390B29C00B79B29 /* LocationSearchTable.swift */; };
+		95622E072390B36400B79B29 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95622E062390B36400B79B29 /* MapViewController.swift */; };
+		95622E092390B3FE00B79B29 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95622E082390B3FE00B79B29 /* LocationManager.swift */; };
+		9571CFD3238DF94800B84C0A /* EarthImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9571CFD2238DF94800B84C0A /* EarthImageStore.swift */; };
+		95959AA22399F085008D2601 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95959AA12399F084008D2601 /* PhotoStore.swift */; };
+		959C32DF238CAD8B009B872C /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959C32DE238CAD8B009B872C /* PhotoDataSource.swift */; };
+		959C32E1238CB8C6009B872C /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959C32E0238CB8C6009B872C /* PhotoCollectionViewCell.swift */; };
+		959C32E5238CD438009B872C /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959C32E4238CD438009B872C /* PhotoInfoViewController.swift */; };
+		95CBCC4F238B343E00D2C6E2 /* EyeInTheSkyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CBCC4E238B343E00D2C6E2 /* EyeInTheSkyViewController.swift */; };
+		95CBCC53238B3AA600D2C6E2 /* RoversAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CBCC52238B3AA600D2C6E2 /* RoversAPI.swift */; };
+		95CBCC57238B59CF00D2C6E2 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CBCC56238B59CF00D2C6E2 /* PhotosViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		952E0869238A226F00315247 /* NASA-API-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA-API-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		952E086C238A226F00315247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		952E086E238A226F00315247 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		952E0873238A226F00315247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		952E0875238A227100315247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		952E0878238A227100315247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		952E087A238A227100315247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		955BC537238E1D6C009795C2 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		95620019239410CD00319FFB /* EyeInTheSkyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeInTheSkyAPI.swift; sourceTree = "<group>"; };
+		9562001B2394118900319FFB /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		9562001E239414F200319FFB /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		95622E042390B29C00B79B29 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		95622E062390B36400B79B29 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		95622E082390B3FE00B79B29 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		9571CFD2238DF94800B84C0A /* EarthImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthImageStore.swift; sourceTree = "<group>"; };
+		95959AA12399F084008D2601 /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		959C32DE238CAD8B009B872C /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
+		959C32E0238CB8C6009B872C /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		959C32E4238CD438009B872C /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
+		95CBCC4E238B343E00D2C6E2 /* EyeInTheSkyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeInTheSkyViewController.swift; sourceTree = "<group>"; };
+		95CBCC52238B3AA600D2C6E2 /* RoversAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoversAPI.swift; sourceTree = "<group>"; };
+		95CBCC56238B59CF00D2C6E2 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		952E0866238A226F00315247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		952E0860238A226F00315247 = {
+			isa = PBXGroup;
+			children = (
+				952E086B238A226F00315247 /* NASA-API-APP */,
+				952E086A238A226F00315247 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		952E086A238A226F00315247 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				952E0869238A226F00315247 /* NASA-API-APP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		952E086B238A226F00315247 /* NASA-API-APP */ = {
+			isa = PBXGroup;
+			children = (
+				9562001D239414CB00319FFB /* Services */,
+				9571CFD1238DF92200B84C0A /* Model */,
+				9571CFD0238DF91A00B84C0A /* View */,
+				9571CFCF238DF90D00B84C0A /* Controller */,
+				952E086C238A226F00315247 /* AppDelegate.swift */,
+				952E086E238A226F00315247 /* SceneDelegate.swift */,
+				952E0875238A227100315247 /* Assets.xcassets */,
+				952E087A238A227100315247 /* Info.plist */,
+				9562001B2394118900319FFB /* Types.swift */,
+			);
+			path = "NASA-API-APP";
+			sourceTree = "<group>";
+		};
+		9562001D239414CB00319FFB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9562001E239414F200319FFB /* ImageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9571CFCF238DF90D00B84C0A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95CBCC4E238B343E00D2C6E2 /* EyeInTheSkyViewController.swift */,
+				959C32DE238CAD8B009B872C /* PhotoDataSource.swift */,
+				959C32E4238CD438009B872C /* PhotoInfoViewController.swift */,
+				95CBCC56238B59CF00D2C6E2 /* PhotosViewController.swift */,
+				95622E042390B29C00B79B29 /* LocationSearchTable.swift */,
+				95622E062390B36400B79B29 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9571CFD0238DF91A00B84C0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				959C32E0238CB8C6009B872C /* PhotoCollectionViewCell.swift */,
+				952E0872238A226F00315247 /* Main.storyboard */,
+				952E0877238A227100315247 /* LaunchScreen.storyboard */,
+				95622E082390B3FE00B79B29 /* LocationManager.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9571CFD1238DF92200B84C0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95959AA12399F084008D2601 /* PhotoStore.swift */,
+				9571CFD2238DF94800B84C0A /* EarthImageStore.swift */,
+				95CBCC52238B3AA600D2C6E2 /* RoversAPI.swift */,
+				955BC537238E1D6C009795C2 /* DataModels.swift */,
+				95620019239410CD00319FFB /* EyeInTheSkyAPI.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		952E0868238A226F00315247 /* NASA-API-APP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 952E0888238A227100315247 /* Build configuration list for PBXNativeTarget "NASA-API-APP" */;
+			buildPhases = (
+				952E0865238A226F00315247 /* Sources */,
+				952E0866238A226F00315247 /* Frameworks */,
+				952E0867238A226F00315247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NASA-API-APP";
+			productName = "NASA-API-APP";
+			productReference = 952E0869238A226F00315247 /* NASA-API-APP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		952E0861238A226F00315247 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Brian Riviere";
+				TargetAttributes = {
+					952E0868238A226F00315247 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 952E0864238A226F00315247 /* Build configuration list for PBXProject "NASA-API-APP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 952E0860238A226F00315247;
+			productRefGroup = 952E086A238A226F00315247 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				952E0868238A226F00315247 /* NASA-API-APP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		952E0867238A226F00315247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952E0879238A227100315247 /* LaunchScreen.storyboard in Resources */,
+				952E0876238A227100315247 /* Assets.xcassets in Resources */,
+				952E0874238A226F00315247 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		952E0865238A226F00315247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95CBCC57238B59CF00D2C6E2 /* PhotosViewController.swift in Sources */,
+				95CBCC53238B3AA600D2C6E2 /* RoversAPI.swift in Sources */,
+				9562001A239410CD00319FFB /* EyeInTheSkyAPI.swift in Sources */,
+				959C32E1238CB8C6009B872C /* PhotoCollectionViewCell.swift in Sources */,
+				95CBCC4F238B343E00D2C6E2 /* EyeInTheSkyViewController.swift in Sources */,
+				95959AA22399F085008D2601 /* PhotoStore.swift in Sources */,
+				9571CFD3238DF94800B84C0A /* EarthImageStore.swift in Sources */,
+				95622E092390B3FE00B79B29 /* LocationManager.swift in Sources */,
+				959C32E5238CD438009B872C /* PhotoInfoViewController.swift in Sources */,
+				9562001C2394118900319FFB /* Types.swift in Sources */,
+				959C32DF238CAD8B009B872C /* PhotoDataSource.swift in Sources */,
+				95622E052390B29C00B79B29 /* LocationSearchTable.swift in Sources */,
+				952E086D238A226F00315247 /* AppDelegate.swift in Sources */,
+				955BC538238E1D6C009795C2 /* DataModels.swift in Sources */,
+				952E086F238A226F00315247 /* SceneDelegate.swift in Sources */,
+				95622E072390B36400B79B29 /* MapViewController.swift in Sources */,
+				9562001F239414F200319FFB /* ImageService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		952E0872238A226F00315247 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				952E0873238A226F00315247 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		952E0877238A227100315247 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				952E0878238A227100315247 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		952E0886238A227100315247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		952E0887238A227100315247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		952E0889238A227100315247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 347CFEP3N9;
+				INFOPLIST_FILE = "NASA-API-APP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cristian.NASA-API-APP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		952E088A238A227100315247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 347CFEP3N9;
+				INFOPLIST_FILE = "NASA-API-APP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cristian.NASA-API-APP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		952E0864238A226F00315247 /* Build configuration list for PBXProject "NASA-API-APP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952E0886238A227100315247 /* Debug */,
+				952E0887238A227100315247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		952E0888238A227100315247 /* Build configuration list for PBXNativeTarget "NASA-API-APP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952E0889238A227100315247 /* Debug */,
+				952E088A238A227100315247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 952E0861238A226F00315247 /* Project object */;
+}
